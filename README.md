@@ -1,1 +1,3 @@
-# move-hosts
+move-2-newsubnet.py command line argument is name of a csv file with a list. Rows should be in the format of IP, subnet name. This script will verify that the IPTOOLs is reachable, reads through each line and verifies that the new subnet exists, there is an available IP in the new subnet, stores the current hostname and domainname, and releases the current assignment. It will then create a new assignment in the next available address in the new subnet. Assignee is the currently logged in user. ToDo: carry over the assignees replace exits with pauses to allow interactive corrections to the list.
+
+movetonewsubnet.py command line arguments are destination subnet name and the current IP address of the host you want to move. This script takes input one subnet,ip at a time.
