@@ -7,6 +7,8 @@ if len(sys.argv) != 2:
 
 iptools_server=raw_input('IPtools server name: ')
 token=raw_input('Please enter your api token: ')
+iptools_server=iptools_server.strip()
+token=token.strip()
 
 # Create an API client with input from command line:
 c = Client(token, host=iptools_server)
@@ -67,7 +69,7 @@ def move_current_ip(ip,subnet):
 	choice = True
 	while choice:
 		try:
-			print 'something'
+			#print 'in choice loop'
 			raw_input('Press enter to continue ...')
 			choice = False
 			#continue

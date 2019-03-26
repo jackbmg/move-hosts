@@ -7,7 +7,8 @@ if len(sys.argv) != 3:
 #hard code current iptools web site here
 iptools_server=raw_input('IPtools server name: ')
 token=raw_input('Please enter your api token: ')
-
+iptools_server=iptools_server.strip()
+token=token.strip()
 # Create an API client with input from command line:
 c = Client(token, host=iptools_server)
 
